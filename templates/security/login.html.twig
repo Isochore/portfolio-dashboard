@@ -1,0 +1,35 @@
+{# {% extends 'dashboard.html.twig' %} #}
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    {{ encore_entry_link_tags("app")}}
+
+
+{% block admin %}
+
+<div id="login-page" class="d-flex align-items-center h-100">
+
+    <div class="container d-flex align-items-center justify-content-center flex-column">
+
+        <h2 class="mb-4">Login</h2>
+
+        <form class="d-flex justify-content-center flex-column" action="{{ path('security_login') }}" method="post">
+            <div class="form-group">
+                <input placeholder="Nom d'utilisateur" required name="_username" type="text" autocomplete="off">
+                <span class="underline"></span>
+            </div>
+
+            <div class="form-group">
+                <input placeholder="Mot de passe" required name="_password" type="password">
+                <span class="underline"></span>
+            </div>
+
+            <div class="form-group d-flex justify-content-center">
+                <button type="submit" class="btn btn-success mt-2">Connexion</button>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}

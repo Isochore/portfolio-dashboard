@@ -1,0 +1,188 @@
+.showcase {
+
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  i {
+    font-size: 8em;
+  }
+
+  .first {
+    background-image: url(../img/ordi-large1.png);
+  }
+
+  .second {
+    background-image: url(../img/ordi-large2.png);
+  }
+
+  .third {
+    background-image: url(../img/ordi-large3.png);
+  }
+
+  .fourth {
+    background-image: url(../img/ordi-large5.png);
+  }
+
+  .showcase-text {
+    padding: 3rem;
+  }
+  .showcase-img {
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: 768px) {
+    .showcase-text {
+      padding: 7rem;
+    }
+  }
+
+  @media (max-width: 575px) { 
+
+      .showcase-img {
+        min-height: 15rem;
+      }
+
+    .first {
+      background-image: url(../img/ordi-sm1.jpg);
+    }
+  
+    .second {
+      background-image: url(../img/ordi-sm2.png);
+    }
+  
+    .third {
+      background-image: url(../img/ordi-sm3.png);
+    }
+  
+    .fourth {
+      background-image: url(../img/ordi-sm5.png);
+    }
+
+  }
+ 
+ @media (min-width: 576px) and (max-width: 767px) {
+
+    .showcase-img {
+      min-height: 18rem;
+    }
+
+  .first {
+    background-image: url(../img/ordi-md1.png);
+  }
+
+  .second {
+    background-image: url(../img/ordi-md2.png);
+  }
+
+  .third {
+    background-image: url(../img/ordi-md3.png);
+  }
+
+  .fourth {
+    background-image: url(../img/ordi-md5.png);
+  }
+ 
+  }
+ 
+ @media (min-width: 768px) and (max-width: 991px) { 
+
+    .showcase-img {
+      min-height: 18rem;
+    }
+ 
+  .first {
+    background-image: url(../img/ordi-md1.png);
+  }
+
+  .second {
+    background-image: url(../img/ordi-md2.png);
+  }
+
+  .third {
+    background-image: url(../img/ordi-md3.png);
+  }
+
+  .fourth {
+    background-image: url(../img/ordi-md5.png);
+  }
+ 
+  }
+ 
+ @media (min-width: 992px) and (max-width: 1199px) { 
+
+    .showcase-img {
+      min-height: 15rem;
+    }
+
+   .first {
+     background-image: url(../img/ordi-md1.png);
+   }
+ 
+   .second {
+     background-image: url(../img/ordi-md2.png);
+   }
+ 
+   .third {
+     background-image: url(../img/ordi-md3.png);
+   }
+ 
+   .fourth {
+     background-image: url(../img/ordi-md5.png);
+   }
+ 
+  }
+ 
+ @media (min-width: 1200px) and (max-width: 1600px) { 
+
+    .showcase-img {
+      min-height: 25rem;
+    }
+
+   .first {
+     background-image: url(../img/ordi-lg1.png);
+   }
+ 
+   .second {
+     background-image: url(../img/ordi-lg2.png);
+   }
+ 
+   .third {
+     background-image: url(../img/ordi-lg3.png);
+   }
+ 
+   .fourth {
+     background-image: url(../img/ordi-lg5.png);
+   }
+ 
+  }
+ 
+  @media (min-width: 1600px) { 
+
+      .showcase-img {
+        min-height: 30rem;
+      }
+
+    .first {
+      background-image: url(../img/ordi-large1.png);
+    }
+  
+    .second {
+      background-image: url(../img/ordi-large2.png);
+    }
+  
+    .third {
+      background-image: url(../img/ordi-large3.png);
+    }
+  
+    .fourth {
+      background-image: url(../img/ordi-large5.png);
+    }
+ 
+ }
+
+
+}
+
+

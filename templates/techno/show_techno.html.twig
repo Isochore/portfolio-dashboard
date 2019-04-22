@@ -1,0 +1,20 @@
+{% extends 'dashboard.html.twig' %}
+
+{% block show %}
+
+{% for techno in technos %}
+
+        <div class="d-flex">
+            <p>
+                <a class="mr-3 btn btn-danger" href="{{ path('delete_techno', {'id' :techno.id}) }}">
+                    <i class="fas fa-trash-alt"></i>
+                </a>
+                {{ techno.name }}
+            </p>
+        </div>
+
+        <hr>
+
+{% endfor %}
+
+{% endblock %}

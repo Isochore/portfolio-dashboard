@@ -1,0 +1,330 @@
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.back_top {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 99;
+  bottom: 40px;
+  float: right;
+  right: 40px;
+  /* max-width: 30px; */
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background-color: #000052;
+  border-style: none;
+  border-radius: 50%;
+  padding: 1px 0 0 16px;
+  color: white;
+  transition: 0.5s;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.back_top:hover {
+  background-color: #000070;
+  color: white;
+}
+
+@media (max-width: 575px) {
+  .back_top {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .back_top {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .back_top {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .back_top {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .back_top {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/fond.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+header.masthead .titre {
+  font-size: 1.5em;
+  color: #c5c5c5;
+}
+header.masthead .intro {
+  margin-top: 5rem;
+}
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+header.masthead h1 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+header.masthead .nom, header.masthead .titre {
+  animation-name: slidein;
+  animation-duration: 1.5s;
+}
+@keyframes slidein {
+  from {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+header.masthead .intro {
+  animation-name: slidein2;
+  animation-duration: 1.5s;
+}
+@keyframes slidein2 {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.showcase {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.showcase i {
+  font-size: 8em;
+}
+.showcase .first {
+  background-image: url(../img/ordi-large1.png);
+}
+.showcase .second {
+  background-image: url(../img/ordi-large2.png);
+}
+.showcase .third {
+  background-image: url(../img/ordi-large3.png);
+}
+.showcase .fourth {
+  background-image: url(../img/ordi-large5.png);
+}
+.showcase .showcase-text {
+  padding: 3rem;
+}
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+@media (max-width: 575px) {
+  .showcase .showcase-img {
+    min-height: 15rem;
+  }
+  .showcase .first {
+    background-image: url(../img/ordi-sm1.jpg);
+  }
+  .showcase .second {
+    background-image: url(../img/ordi-sm2.png);
+  }
+  .showcase .third {
+    background-image: url(../img/ordi-sm3.png);
+  }
+  .showcase .fourth {
+    background-image: url(../img/ordi-sm5.png);
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .showcase .showcase-img {
+    min-height: 18rem;
+  }
+  .showcase .first {
+    background-image: url(../img/ordi-md1.png);
+  }
+  .showcase .second {
+    background-image: url(../img/ordi-md2.png);
+  }
+  .showcase .third {
+    background-image: url(../img/ordi-md3.png);
+  }
+  .showcase .fourth {
+    background-image: url(../img/ordi-md5.png);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .showcase .showcase-img {
+    min-height: 18rem;
+  }
+  .showcase .first {
+    background-image: url(../img/ordi-md1.png);
+  }
+  .showcase .second {
+    background-image: url(../img/ordi-md2.png);
+  }
+  .showcase .third {
+    background-image: url(../img/ordi-md3.png);
+  }
+  .showcase .fourth {
+    background-image: url(../img/ordi-md5.png);
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .showcase .showcase-img {
+    min-height: 15rem;
+  }
+  .showcase .first {
+    background-image: url(../img/ordi-md1.png);
+  }
+  .showcase .second {
+    background-image: url(../img/ordi-md2.png);
+  }
+  .showcase .third {
+    background-image: url(../img/ordi-md3.png);
+  }
+  .showcase .fourth {
+    background-image: url(../img/ordi-md5.png);
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .showcase .showcase-img {
+    min-height: 25rem;
+  }
+  .showcase .first {
+    background-image: url(../img/ordi-lg1.png);
+  }
+  .showcase .second {
+    background-image: url(../img/ordi-lg2.png);
+  }
+  .showcase .third {
+    background-image: url(../img/ordi-lg3.png);
+  }
+  .showcase .fourth {
+    background-image: url(../img/ordi-lg5.png);
+  }
+}
+@media (min-width: 1600px) {
+  .showcase .showcase-img {
+    min-height: 30rem;
+  }
+  .showcase .first {
+    background-image: url(../img/ordi-large1.png);
+  }
+  .showcase .second {
+    background-image: url(../img/ordi-large2.png);
+  }
+  .showcase .third {
+    background-image: url(../img/ordi-large3.png);
+  }
+  .showcase .fourth {
+    background-image: url(../img/ordi-large5.png);
+  }
+}
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #323433;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.call-to-action .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.cv {
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=landing-page.css.map */

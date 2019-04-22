@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block projets %}
+    {% for projet in projets %}
+
+        <h2>{{ projet.title }}</h2>
+        <p>{{ projet.content | raw }}</p>
+        <img src="{{ projet.image }}" alt="">
+        <a href="{{ projet.link }}">Lien</a>
+  
+    {% endfor %}
+{% endblock %}

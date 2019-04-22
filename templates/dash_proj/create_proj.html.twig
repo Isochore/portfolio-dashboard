@@ -1,0 +1,43 @@
+{% extends 'dashboard.html.twig' %}
+
+{% form_theme formProjet 'bootstrap_4_layout.html.twig' %}
+ 
+{% block create %}
+
+{% if editMode %}
+<h1>Modifier le projet</h1>
+{% else %}
+<h1>Créer un projet</h1>
+{% endif %}
+
+
+
+{{ form_start(formProjet) }}
+
+{{ form_row(formProjet.title, {'attr': {'placeholder': "Nom du projet"}}) }}
+{{ form_row(formProjet.content, {'attr': {'placeholder': "Description du projet"}}) }}
+{{ form_row(formProjet.image, {'attr': {'placeholder': "URL de l'image"}}) }}
+{{ form_row(formProjet.link, {'attr': {'placeholder': "Lien du projet"}}) }}
+{{ form_row(formProjet.git, {'attr': {'placeholder': "Lien du git"}}) }}
+
+<div class="d-flex flex-wrap">
+Technologies :
+{% for techno in formProjet.technology %}
+    <p class="mr-4">{{ form_row(techno) }}</p>
+{% endfor %}
+</div>
+
+<button type="submit" class="btn btn-success">
+
+{% if editMode %}
+Enregistrer
+{% else %}
+Ajouter le projet
+{% endif %}
+
+</button>
+
+
+{{ form_end(formProjet) }}
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'dashboard.html.twig' %}
+
+{% form_theme formTechno 'bootstrap_4_layout.html.twig' %}
+ 
+{% block create %}
+
+<h1>Créer une Technologie</h1>
+
+{{ form_start(formTechno) }}
+
+{{ form_row(formTechno.name, {'attr': {'placeholder': "Nom de la technologie"}}) }}
+
+<button type="submit" class="btn btn-success">Ajouter la technologie</button>
+
+{{ form_end(formTechno) }}
+
+{% endblock %}
